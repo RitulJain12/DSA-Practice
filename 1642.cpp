@@ -12,7 +12,7 @@ class Solution {
                 while(i+1<n){
                 while(i+1<n &&heights[i]>=heights[i+1]) i++;
                 if(i+1==n) return i;
-                 int diff=heights[i+1]-heights[i];
+                 int diff=heights [i+1]-heights[i];
             
                     pq.push(diff);
                     bricks-=diff;
