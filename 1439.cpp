@@ -70,4 +70,4 @@ return ans;
 }
 
 
-// ye ek number problem he bs on ans ki isme mko optimise krnee me bhut maja aya deep thi problem with lots of dry run 
+// ye ek number problem he bs on ans ki isme mko optimise krnee me bhut maja aya deep thi problem with lots of dry run  
