@@ -48,7 +48,7 @@ class Solution {
                     while(dq.size() && dq.front()<i-k) dq.pop_front();
         
                     dp[i]=nums[i]+dp[dq.front()];
-                    dp[i]=max(dp[i],nums[i]);
+                    dp[i]= max(dp[i],nums[i]);
                     ans=max(ans,dp[i]);
         
                     while(dq.size() && dp[dq.back()]<dp[i]) dq.pop_back();
@@ -61,3 +61,5 @@ class Solution {
         
             }
         };
+
+        // 1696 ,1425 leetcode
