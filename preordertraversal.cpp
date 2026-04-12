@@ -30,9 +30,7 @@ vector<int> morrisInorderTraversal(TreeNode* root) {
                 pre = pre->right;
             }
 
-          
-            if (!pre->right) {
-                pre->right = current;
+          ght = current;
                 result.push_back(current->val);
                 current = current->left;
             } else {
