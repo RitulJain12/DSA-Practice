@@ -25,7 +25,7 @@ int main(){
         {2, 60, 110, 160},
         {3, 70, 120, 170},
         {4, 80, 130, 180}
-    };
+    }; 
 int k=5;
 
 m= mat.size(); n = mat[0].size();
@@ -43,7 +43,7 @@ for(auto &row : mat) {
     l += row[0];
     h += row.back();
 }
-
+ 
 while(l <= h) {
 
     long long mid = l + (h-l)/2;
@@ -55,7 +55,7 @@ while(l <= h) {
     else {
         l = mid + 1;
     }
-}
+} 
 
 
 cout<<ans<<endl;

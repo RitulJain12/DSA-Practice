@@ -10,7 +10,7 @@ int main(){
     }
     cout<<totalDistance<<endl;
     return 0;
-}
-
+} 
+ 
 // if we have to find the shortest  path from point a to point b then traverse along diagonal if possible otherwise move in x or y direction whichever is minimum
 //   so take max of absolute difference of x coordinates and absolute difference of y coordinates of point a and point b

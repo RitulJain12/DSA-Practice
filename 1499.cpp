@@ -27,7 +27,7 @@ class Solution {
           dq.push_back({temp,xcor});
     
             }
-    
+     
     return ans;
         }
     };
