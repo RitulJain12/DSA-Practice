@@ -9,7 +9,7 @@ public:
 
             vector<int> &v = pos[ch - 'a'];
 
-            auto it = upper_bound(v.begin(), v.end(), prev);
+            auto it = upper_\bound(v.begin(), v.end(), prev);
 
             if(it == v.end()) return false;
 
