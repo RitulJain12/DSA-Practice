@@ -1,0 +1,72 @@
+class Dsu {
+public:
+    vector<int> p, sz;
+
+    Dsu(int n) {
+        p.resize(n);
+        sz.resize(n, 1);
+
+        for (int i = 0; i < n; i++)
+            p[i] = i;
+    }
+
+    int find(int x) {
+        if (p[x] == x)
+            return x;
+
+        return p[x] = find(p[x]);
+    }
+
+    bool uni(int a, int b) {
+        a = find(a);
+        b = find(b);
+
+        if (a == b)
+            return false;
+
+        if (sz[a] > sz[b])
+            swap(a, b);
+
+        p[a] = b;
+        sz[b] += sz[a];
+
+        return true;
+    }
+};
+
+class Solution {
+public:
+    int common(vector<int>& a, vector<int>& b) {
+        unordered_set<int> s(a.begin(), a.end());
+
+        int cnt = 0;
+
+        for (int x : b) {
+            if (s.count(x)) {
+                cnt++;
+                s.erase(x); 
+            }
+        }
+
+        return cnt;
+    }
+
+    int numberOfComponents(vector<vector<int>>& properties, int k) {
+        int n = properties.size();
+
+        Dsu d(n);
+        int components = n;
+
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; j < n; j++) {
+
+                if (common(properties[i], properties[j]) >= k) {
+                    if (d.uni(i, j))
+                        components--;
+                }
+            }
+        }
+
+        return components;
+    }
+};
