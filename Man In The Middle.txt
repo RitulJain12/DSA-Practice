@@ -1,1 +1,10 @@
 it will work when n is like 40,50 and other state is huge so we cant use dp here we need to use mitm  trick here in which we will process it in two array left and right and then do operations on the basis of calculations
+
+| Constraint       | Technique                     |
+| ---------------- | ----------------------------- |
+| N=1000, Sum=1000 | DP                            |
+| N=100, Sum=10000 | DP                            |
+| N=40, Sum=10^12  | MITM                          |
+| N=20             | Pure Backtracking             |
+| N=40-45          | MITM                          |
+| N=100000         | Greedy / Graph / Segment Tree |
