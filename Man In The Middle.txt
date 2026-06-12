@@ -1,0 +1,1 @@
+it will work when n is like 40,50 and other state is huge so we cant use dp here we need to use mitm  trick here in which we will process it in two array left and right and then do operations on the basis of calculations
