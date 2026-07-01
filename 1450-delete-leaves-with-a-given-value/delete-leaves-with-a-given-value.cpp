@@ -20,7 +20,7 @@ public:
 
         root->left=help(root->left,t);
         root->right=help(root->right,t);
-         if(!root->left && !root->right && root->val==t)   root=help(root,t);
+         if(!root->left && !root->right && root->val==t)  return nullptr;
 
 
         return root;
