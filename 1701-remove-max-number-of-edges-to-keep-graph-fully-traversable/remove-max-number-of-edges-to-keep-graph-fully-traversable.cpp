@@ -60,7 +60,7 @@ public:
                 bool a = type1.uni(u, v);
                 bool b = type2.uni(u, v);
 
-                if (a || b)
+                if (a && b)
                     used++;
             }
             else if (type == 1) {
