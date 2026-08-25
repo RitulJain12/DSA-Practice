@@ -18,3 +18,7 @@ long long solve(int i, int j, string &s, vector<vector<long long>> &dp) {
         solve(i, j - 1, s, dp) -
         solve(i + 1, j - 1, s, dp);
 }
+
+2484
+533
+and all the logic of length count  
